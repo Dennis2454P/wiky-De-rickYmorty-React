@@ -17,27 +17,26 @@ export default function Character(props) {
                             <img src={elemento.image} alt={elemento.image} />
 
                         </div>
-                        <div>
+                        <div className="containerPeque">
                             <h3>{elemento.name}</h3>
                             <h6>
                                 {elemento.status === "Alive" ? (
-                                    <><span className="alive">Vivo
-
-                                    </span>
+                                    <><span className="alive">
+                                    </span>Vivo
                                     </>
                                 ) : (
                                     <>
-                                        <span className="dead">Muerto</span>
+                                        <span className="dead"></span>Muerto
                                     </>)}
                             </h6>
-                            <p>
-                                <span className="text-grey">Episodios:</span>
+                           <p>
+                                <span className="text-grey">Episodios: </span>
                                 <span>{elemento.episode.length}</span>
-                            </p>
-                            <p>
-                                <span className="text-grey">Especie:</span>
+                          </p>
+                        <p>
+                                <span className="text-grey">Especie: </span>
                                 <span>{elemento.species}</span>
-                            </p>
+                          </p>
                         </div>
                         <div>
 

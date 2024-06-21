@@ -59,13 +59,20 @@ body {
   margin: 20px 10px;
   border-radius: 10px;
   align-items: flex-start;
+  transition: transform 0.4s ease-in-out; /* Añadir transición */
 }
+
+.character-container:active {
+  transform: scale(1.5); /* Agrandar la tarjeta */
+}
+
 
 .character-container h3 {
   margin: 10px 0;
 }
 
 .character-container h6 {
+  
   margin-top: 0px;
   margin-bottom: 15px;
   display: flex;
@@ -73,14 +80,17 @@ body {
   justify-content: flex-start;
   font-size: 16px;
 }
-
+.containerPeque{
+  display: inline-block;
+  justify-content: flex-start;
+}
 .character-container .dead,
 .alive {
   height: 0.5rem;
   width: 0.5rem;
-  margin-right: 0.375rem;
+  margin-right: 0.344rem;
   border-radius: 50%;
-  display: inline-block;
+ 
 }
 
 .character-container .dead {
